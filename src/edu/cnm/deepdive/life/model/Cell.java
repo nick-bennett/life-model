@@ -1,10 +1,11 @@
-package edu.cnm.deepdive.ca.model;
+package edu.cnm.deepdive.life.model;
 
 public enum Cell {
   DEAD {
     @Override
     public Cell next(Cell[][] terrain, int row, int column) {
-      return (livingNeighbors(terrain, row, column) == 3) ? ALIVE : DEAD;
+      int count = livingNeighbors(terrain, row, column);
+      return (count == 3) ? ALIVE : DEAD;
     }
   },
   ALIVE {

@@ -1,4 +1,4 @@
-package edu.cnm.deepdive.ca.model;
+package edu.cnm.deepdive.life.model;
 
 import java.util.Arrays;
 import java.util.BitSet;
